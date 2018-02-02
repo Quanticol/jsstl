@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>eu.quanticol</groupId>
+    <artifactId>jsstl</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>jSSTL: java Signal Spatio Temporal Logic</name>
+
+    <description>
+    jSSTL is a Java library for the specification and verification of spatio-temporal 
+    properties of dynamical systems described as spatio-temporal traces over a weighted 
+    graph. Given a trace x(t,l), a weighted graph and a formula Phi, it returns the 
+    boolean and quantitative spatio-temporal signals of the satisfaction at each time 
+    and in each location.
+    </description>
+
+    <url>https://github.com/Quanticol/jSSTL</url>
+
+    <developers>
+        <developer>
+            <name>Michele Loreti</name>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Laura Nenzi</name>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Eclipse Public License</name>
+            <url>https://www.eclipse.org/legal/epl-v10.html</url>
+        </license>
+    </licenses>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<maven.compiler.source>1.8</maven.compiler.source>
+    	<maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <module>common</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+        	<groupId>com.google.code.gson</groupId>
+        	<artifactId>gson</artifactId>
+        	<version>2.8.0</version>
+        </dependency>
+		<dependency>
+   			<groupId>org.apache.commons</groupId>
+   			<artifactId>commons-text</artifactId>
+   			<version>1.1</version>
+		</dependency>
+    </dependencies> 
+</project>
