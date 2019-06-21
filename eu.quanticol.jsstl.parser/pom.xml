@@ -7,7 +7,7 @@
     <artifactId>eu.quanticol.jsstl.parent</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>eu.quanticol.jsstl.parser</groupId>
+  <groupId>eu.quanticol.jsstl</groupId>
   <artifactId>eu.quanticol.jsstl.parser</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>eu.quanticol.jsstl.parser</name>
